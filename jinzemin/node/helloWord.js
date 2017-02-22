@@ -6,7 +6,7 @@ for(var i=0;i<100; i++){
     num+=1;
 }
 console.log(num)
-var a="金泽明：37;金泽明：57;金泽明：87;金泽明：87";
+var a="金泽明：37;金泽明pppp：57;金泽明：87;金泽明：87";
 var b=a.split(";");
 console.log(b);
 var c=0;
