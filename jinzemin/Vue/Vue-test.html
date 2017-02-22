@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="//cdn.bootcss.com/vue/2.1.10/vue.min.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+<ol>
+    <todo-item v-for="item in groceryList" v-bind:todo="item"></todo-item>
+</ol>
+</div>
+<script>
+    Vue.component('todo-item',{
+        props:['todo'],
+        template:'<li>{{todo.text}}</li>'
+    })
+    var app = new Vue({
+        el : "#app",
+        data : {
+            groceryList:[
+                {text:"jin1"},
+                {text:"ji2n"},
+                {text:"jin3"},
+                {text:"ji4n"},
+                {text:"ji5n"},
+            ]
+        }
+
+    });
+</script>
+</body>
+</html>

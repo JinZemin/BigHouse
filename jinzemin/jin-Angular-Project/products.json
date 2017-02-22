@@ -1,0 +1,20 @@
+[
+  {
+    "category":"watersorts","description":"a boat for one person","name":"kayak","price":275,"id":"12"
+  },
+  {
+    "category":"watersorts","description":"a boat for one person","name":"kayak","price":48.95,"id":"13"
+  }, {
+  "category":"watersorts","description":"a boat for one person","name":"kayak","price":19.5,"id":"14"
+}, {
+  "category":"scoccer","description":"a boat for one person","name":"kayak","price":34.5,"id":"15"
+}, {
+  "category":"chess","description":"a boat for one person","name":"kayak","price":79500,"id":"16"
+}, {
+  "category":"chess","description":"a boat for one person","name":"kayak","price":16,"id":"17"
+}, {
+  "category":"chess","description":"a boat for one person","name":"kayak","price":29.95,"id":"18"
+}, {
+  "category":"watersorts","description":"a boat for one person","name":"bling-bing","price":100,"id":"12"
+}
+]

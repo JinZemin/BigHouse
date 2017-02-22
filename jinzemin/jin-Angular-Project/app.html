@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="sportsStore">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <script src="js/angular.js" charset="utf-8"></script>
+    <script src="js/angular-route.js" charset="utf-8"></script>
+    <title>SportsStore</title>
+    <script>
+        angular.module("sportsStore", ["customFilters","cart","ngRoute"])
+            .config(function($routeProvider){
+                $routeProvider.when("/complete",{
+                    templateUrl:"js/views/thankYou.html"
+                });
+                $routeProvider.when("/placeorder",{
+                    templateUrl:"js/views/palceOrder.html"
+                });
+                $routeProvider.when("/checkout",{
+                templateUrl:"js/views/checkoutSummary.html"
+        });
+                $routeProvider.when("/products",{
+                    templateUrl:"js/views/productList.html"
+                });
+                $routeProvider.otherwise({
+                    templateUrl:"js/views/productList.html"
+                })
+            })
+    </script>
+    <script src="js/components/sportsStore.js" charset="utf-8"></script>
+    <script src="js/filters/customFiltres.js" charset="utf-8"></script>
+    <script src="js/controllers/productListControllers.js" charset="utf-8"></script>
+    <script src="js/components/cart/cart.js" charset="utf-8"></script>
+    <script src="js/angular-route.js" charset="UTF-8"></script>
+    <script src="js/controllers/checkoutControllers.js"></script>
+</head>
+<body ng-controller="sportsStoreCtrl">
+<div class="navbar navbar-inverse">
+    <a href="#" class="navbar-brand">SPORTS STORS</a>
+    <cart-summary>
+</div>
+<div class="alert alert-danger" ng-show="data.error">
+    Error({{data.error.status}}).the product data was not loaded.
+    <a href="#/app.html" class="alert-link">Click here to  try again</a>
+</div>
+<ng-view></ng-view>
+</body>
+</html>

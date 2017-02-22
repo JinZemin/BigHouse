@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格排序</title>
+    <style>
+        #tableSort{
+            moz-user-select:-moz-none;
+            -moz-user-select:none;
+            -o-user-select:none;
+            -khtml-user-select:none;
+            -webkit-user-select:none;
+            -ms-user-select:none;
+            user-select:none;
+            border-collapse:collapse;
+            border-spacing:0;
+            margin:0;
+            padding:0;
+            width:100%;
+            text-align:center;
+            margin:15px 0;
+        }
+        #tableSort th, #tableSort td{
+            padding:10px;
+            border:1px solid #cccccc;
+        }
+        #tableSort th{
+            cursor:pointer;
+            background:#eeeeee;
+        }
+        #tableSort tr:nth-child(even){
+            background:#f9f9f9;
+        }
+    </style>
+</head>
+<body>
+<table id="tableSort">
+    <thead>
+        <tr>
+            <th data-type="num">工号</th>
+            <th data-type="string">姓名</th>
+            <th data-type="string">性别</th>
+            <th data-type="date">时间</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>01</td>
+            <td>cccc</td>
+            <td>男</td>
+            <td>2014-12-12</td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td>bbbb</td>
+            <td>男</td>
+            <td>2016-12-18</td>
+        </tr>
+        <tr>
+            <td>03</td>
+            <td>mmmm</td>
+            <td>女</td>
+            <td>2013-12-16</td>
+        </tr>
+        <tr>
+            <td>04</td>
+            <td>ffff</td>
+            <td>女</td>
+            <td>2015-12-12</td>
+        </tr>
+        <tr>
+            <td>05</td>
+            <td>tttt</td>
+            <td>男</td>
+            <td>2012-07-22</td>
+        </tr>
+        <tr>
+            <td>06</td>
+            <td>ssss</td>
+            <td>女</td>
+            <td>2008-10-07</td>
+        </tr>
+        <tr>
+            <td>07</td>
+            <td>aaaa</td>
+            <td>男</td>
+            <td>2012-12-12</td>
+        </tr>
+    </tbody>
+</table>
+<script src="js/tableSort.js" type="text/javascript" charset="UTF-8"></script>
+</body>
+</html>
